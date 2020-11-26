@@ -1,0 +1,207 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* font variable */
+/* color variable */
+body {
+  max-width: 375px;
+}
+
+/* header */
+.logo_font {
+  font-family: "Shrikhand";
+  font-size: 25px;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-left: 115px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0px 4px 5px #d4d4d4;
+          box-shadow: 0px 4px 5px #d4d4d4;
+  position: relative;
+  z-index: 100;
+}
+
+/* localisation */
+.localisation {
+  background-color: #eaeaea;
+  position: relative;
+  z-index: 10;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0 auto;
+}
+
+.icon_localiser {
+  color: #474747;
+}
+
+.position {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-left: 12px;
+  color: #474747;
+}
+
+/* explorer */
+.explorer {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 375px;
+  height: 200px;
+  background-color: #f6f6f6;
+}
+
+.title_explorer {
+  font-weight: 600;
+  line-height: 25px;
+  width: 250px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.explorer_bio {
+  font-weight: 200;
+  line-height: 25px;
+  width: 270px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_explorer {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 40px;
+  background: #9356dc;
+  background: linear-gradient(358deg, #9356dc 0%, #ff79da 100%);
+}
+
+.font-explorer {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+/* fonctionnement */
+.fonctionnement {
+  width: 375px;
+}
+
+.title_fonctionnement {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 40px;
+  margin-left: 20px;
+}
+
+.nav_fonction {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.number {
+  position: relative;
+  top: 42px;
+  right: 150px;
+  border: 1px solid none;
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+.btn_fonction {
+  width: 300px;
+  border: 1px solid none;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 23.5px;
+  padding-bottom: 23.5px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 2px 2px 2px 2px #ebebeb;
+          box-shadow: 2px 2px 2px 2px #ebebeb;
+}
+
+.btn_fonction:hover {
+  background-color: #f5edff;
+}
+
+.icon_mobile {
+  margin-left: 30px;
+  color: #7e7e7e;
+}
+
+.icon_bar {
+  margin-left: 30px;
+  color: #7e7e7e;
+}
+
+.icon_store {
+  margin-left: 30px;
+  color: #7e7e7e;
+}
+
+.text_btn_fonction {
+  margin-left: 30px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+/* restaurant */
+.restaurant {
+  background-color: #f6f6f6;
+}
+
+.title_restaurant {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 40px;
+  margin-left: 20px;
+}
+
+.img_restaurant_1 {
+  width: 210px;
+  height: 100px;
+  background-image: url(img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
