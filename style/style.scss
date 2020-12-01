@@ -182,26 +182,101 @@ body{
 
 .restaurant{
     background-color: #f6f6f6;
+    margin-top: 40px;
 }
 
-.title_restaurant{
+.new{
+    width: 60px;
+    position: relative;
+    top: 40px;
+    left: 260px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: $mainfont;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #99e2d0;
+    color: #39a98e;
+
+}
+.main_title_restaurant{
     font-family: $mainfont;
     font-weight: 700;
     font-size: 22px;
     padding-top: 40px;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .box_restaurant{
-
+    border: 1px solid black;
+    width: 335px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-radius: 20px;
 }
 
+
 .img_restaurant_1{
-    width: 210px;
-    height: 100px;
-    background-image: url(img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    width: 335px;
+    height: 150px;
+    background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+
+.img_restaurant_2{
+    width: 335px;
+    height: 150px;
+    background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+}
+
+.img_restaurant_3{
+    width: 335px;
+    height: 150px;
+    background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.img_restaurant_4{
+    width: 335px;
+    height: 150px;
+    background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.title_restaurant{
+    font-family: $mainfont;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.restaurant_position{
+    font-family: $mainfont;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+.icon_heart{
+    font-size: 25px;
+    border: 1px solid black;
+    position: relative;
+    top: -35px;
+    left: 285px;
 }
