@@ -1,0 +1,294 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* font variable */
+/* color variable */
+/* header */
+.logo_font {
+  font-family: "Shrikhand";
+  font-size: 25px;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-left: 115px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 20px;
+  top: 23px;
+  font-size: 20px;
+  color: black;
+}
+
+/* img restaurant */
+.img_restaurant_1 {
+  width: 375px;
+  height: 250px;
+  background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.img_restaurant_2 {
+  width: 375px;
+  height: 250px;
+  background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.img_restaurant_3 {
+  width: 375px;
+  height: 250px;
+  background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.img_restaurant_4 {
+  width: 375px;
+  height: 250px;
+  background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* menu */
+.menu_card {
+  width: 375px;
+  border-radius: 50px 50px 0px 0px;
+  padding-top: 40px;
+  background-color: white;
+  position: absolute;
+  top: 265px;
+  background-color: #F2F2F2;
+  padding-bottom: 20px;
+}
+
+.restaurant_name {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  margin-left: 30px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.fa-heart {
+  font-size: 25px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+/* starter */
+.starter_title {
+  font-family: "Roboto", sans-serif;
+  margin-left: 30px;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  line-height: 30px;
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.starter_menu {
+  position: relative;
+  -webkit-box-shadow: 5px 5px 5px 5px #e6e6e6;
+          box-shadow: 5px 5px 5px 5px #e6e6e6;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #FFF;
+}
+
+.starter_name {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.starter_detail {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+/* dish */
+.dish_title {
+  font-family: "Roboto", sans-serif;
+  margin-left: 30px;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  line-height: 30px;
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.dish_menu {
+  position: relative;
+  -webkit-box-shadow: 5px 5px 5px 5px #e6e6e6;
+          box-shadow: 5px 5px 5px 5px #e6e6e6;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #FFF;
+}
+
+.dish_name {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.dish_detail {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+/* dessert */
+.dessert_title {
+  font-family: "Roboto", sans-serif;
+  margin-left: 30px;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  line-height: 30px;
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.dessert_menu {
+  position: relative;
+  -webkit-box-shadow: 5px 5px 5px 5px #e6e6e6;
+          box-shadow: 5px 5px 5px 5px #e6e6e6;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #FFF;
+}
+
+.dessert_name {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.dessert_detail {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+/* order */
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 375px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.btn_order {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 40px;
+  background: #9356dc;
+  background: linear-gradient(358deg, #9356dc 0%, #ff79da 100%);
+}
+
+.font-order {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* footer */
+.footer {
+  background-color: #353535;
+  padding-bottom: 20px;
+  position: relative;
+  top: 1090px;
+}
+
+.logo_footer {
+  font-family: "Shrikhand";
+  font-size: 20px;
+  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.footer_text {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.fa-utensils {
+  padding-right: 5px;
+}
+
+.fa-hands-helping {
+  font-size: 12px;
+  padding-right: 5px;
+}
+/*# sourceMappingURL=style_menu.css.map */

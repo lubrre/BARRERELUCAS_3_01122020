@@ -183,26 +183,17 @@ body {
   font-weight: 500;
 }
 
+/* link page */
+.link_page {
+  text-decoration: none;
+  color: black;
+}
+
 /* restaurant */
 .restaurant {
   background-color: #f6f6f6;
   margin-top: 40px;
-}
-
-.new {
-  width: 60px;
-  position: relative;
-  top: 40px;
-  left: 260px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  background-color: #99e2d0;
-  color: #39a98e;
+  padding-bottom: 20px;
 }
 
 .main_title_restaurant {
@@ -215,9 +206,10 @@ body {
 }
 
 .box_restaurant {
-  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px 2px 2px  #ebebeb80;
+          box-shadow: 2px 2px 2px 2px  #ebebeb80;
   width: 335px;
-  height: 200px;
+  height: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,43 +219,73 @@ body {
           flex-direction: column;
   margin-left: 20px;
   border-radius: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.box_restaurant:hover {
+  -webkit-box-shadow: 2px 2px 2px 2px  #ddddddb4;
+          box-shadow: 2px 2px 2px 2px  #ddddddb4;
+}
+
+.new {
+  width: 60px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #99e2d0;
+  color: #39a98e;
 }
 
 .img_restaurant_1 {
   width: 335px;
-  height: 150px;
+  height: 175px;
   background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  border: 1px solid black;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 20px;
 }
 
 .img_restaurant_2 {
   width: 335px;
-  height: 150px;
+  height: 175px;
   background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 20px;
 }
 
 .img_restaurant_3 {
   width: 335px;
-  height: 150px;
-  background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  height: 175px;
+  background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 20px;
 }
 
 .img_restaurant_4 {
   width: 335px;
-  height: 150px;
+  height: 175px;
   background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 20px;
 }
 
 .title_restaurant {
@@ -276,14 +298,66 @@ body {
 .restaurant_position {
   font-family: "Roboto", sans-serif;
   margin-left: 10px;
-  border: 1px solid black;
+  margin-bottom: 10px;
 }
 
 .icon_heart {
   font-size: 25px;
-  border: 1px solid black;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.icon_heart:hover {
+  color: #9356dc;
+  color: linear-gradient(195deg, #9356dc 0%, #ff79da 100%);
+  display: inline;
+}
+
+.icon_heart_outline {
+  font-size: 25px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: inline;
+}
+
+.icon_heart_outline:hover {
+  display: none;
+}
+
+/* footer */
+.footer {
+  background-color: #353535;
+  padding-bottom: 20px;
+}
+
+.logo_footer {
+  font-family: "Shrikhand";
+  font-size: 20px;
+  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   position: relative;
-  top: -35px;
-  left: 285px;
+  z-index: 100;
+}
+
+.footer_text {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.fa-utensils {
+  padding-right: 5px;
+}
+
+.fa-hands-helping {
+  font-size: 12px;
+  padding-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
