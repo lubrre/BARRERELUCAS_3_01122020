@@ -124,6 +124,13 @@ $thirdcolor : #99E2D0 ;
     padding: 12px;
     margin-bottom: 20px;
     background-color: #FFF;
+    animation: slideUp 2s;
+    overflow: hidden;
+}
+
+.text_starter{
+    display: flex;
+    flex-direction: column;
 }
 
 .starter_name{
@@ -137,6 +144,7 @@ $thirdcolor : #99E2D0 ;
     font-family: $mainfont;
     font-size: 14px;
     font-weight: 300;
+    text-overflow: ellipsis;
 }
 
 .price{
@@ -145,8 +153,53 @@ $thirdcolor : #99E2D0 ;
     position: absolute;
     bottom: 10px;
     right: 20px;
+} 
+
+.checkmark{
+    padding: 17.5px;
+    background-color: $thirdcolor;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    bottom: 0.5px;
+    right: 0px;
+    opacity: 0;
 }
 
+.fa-check-circle{
+    color: white;
+    font-size: 30px;
+}
+
+/* starter animation */
+.starter_menu:hover .checkmark{
+    animation: slideLeft 1s forwards;
+}
+
+.starter_menu:hover .starter_name{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.starter_menu:hover .price{
+    animation: priceposition 1s forwards;
+}
+
+.starter_menu:hover .starter_detail{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    margin: 0;
+} 
+
+.starter_menu:hover .fa-check-circle{
+    animation: rotateCheckmark 1s forwards;
+}
 
 /* dish */
 .dish_title{
@@ -168,6 +221,13 @@ $thirdcolor : #99E2D0 ;
     padding: 12px;
     margin-bottom: 20px;
     background-color: #FFF;
+    animation: slideUp 2s;
+    overflow: hidden;
+}
+
+.text_dish{
+    display: flex;
+    flex-direction: column;
 }
 
 .dish_name{
@@ -191,6 +251,38 @@ $thirdcolor : #99E2D0 ;
     right: 20px;
 }
 
+/* dish animation */
+
+
+.dish_menu:hover .checkmark{
+    animation: slideLeft 1s forwards;
+}
+
+.dish_menu:hover .dish_name{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.dish_menu:hover .price{
+    animation: priceposition 1s forwards;
+}
+
+.dish_menu:hover .dish_detail{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    margin: 0;
+} 
+
+.dish_menu:hover .fa-check-circle{
+    animation: rotateCheckmark 1s forwards;
+}
 
 /* dessert */
 .dessert_title{
@@ -212,6 +304,13 @@ $thirdcolor : #99E2D0 ;
     padding: 12px;
     margin-bottom: 20px;
     background-color: #FFF;
+    animation: slideUp 2s;
+    overflow: hidden;
+}
+
+.text_dessert{
+    display: flex;
+    flex-direction: column;
 }
 
 .dessert_name{
@@ -233,6 +332,39 @@ $thirdcolor : #99E2D0 ;
     position: absolute;
     bottom: 10px;
     right: 20px;
+}
+
+/* dessert animation */
+
+
+.dessert_menu:hover .checkmark{
+    animation: slideLeft 1s forwards;
+}
+
+.dessert_menu:hover .dessert_name{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.dessert_menu:hover .price{
+    animation: priceposition 1s forwards;
+}
+
+.dessert_menu:hover .dessert_detail{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.dessert_menu:hover .fa-check-circle{
+    animation: rotateCheckmark 1s forwards;
 }
 
 /* order */
@@ -270,6 +402,7 @@ $thirdcolor : #99E2D0 ;
     padding-bottom: 20px;
     position: relative;
     top: 1090px;
+    width: 375px;
 
 }
 .logo_footer{
@@ -296,4 +429,49 @@ $thirdcolor : #99E2D0 ;
 .fa-hands-helping{
     font-size: 12px;
     padding-right: 5px;
+}
+
+
+@keyframes slideUp{
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    from{
+        transform: translateX(40px);
+        opacity: 1;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes priceposition{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-60px);
+    }
+}
+
+@keyframes rotateCheckmark{
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
 }

@@ -115,6 +115,19 @@
   padding: 12px;
   margin-bottom: 20px;
   background-color: #FFF;
+  -webkit-animation: slideUp 2s;
+          animation: slideUp 2s;
+  overflow: hidden;
+}
+
+.text_starter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .starter_name {
@@ -128,6 +141,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 300;
+  text-overflow: ellipsis;
 }
 
 .price {
@@ -136,6 +150,55 @@
   position: absolute;
   bottom: 10px;
   right: 20px;
+}
+
+.checkmark {
+  padding: 17.5px;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  bottom: 0.5px;
+  right: 0px;
+  opacity: 0;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 30px;
+}
+
+/* starter animation */
+.starter_menu:hover .checkmark {
+  -webkit-animation: slideLeft 1s forwards;
+          animation: slideLeft 1s forwards;
+}
+
+.starter_menu:hover .starter_name {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.starter_menu:hover .price {
+  -webkit-animation: priceposition 1s forwards;
+          animation: priceposition 1s forwards;
+}
+
+.starter_menu:hover .starter_detail {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.starter_menu:hover .fa-check-circle {
+  -webkit-animation: rotateCheckmark 1s forwards;
+          animation: rotateCheckmark 1s forwards;
 }
 
 /* dish */
@@ -159,6 +222,19 @@
   padding: 12px;
   margin-bottom: 20px;
   background-color: #FFF;
+  -webkit-animation: slideUp 2s;
+          animation: slideUp 2s;
+  overflow: hidden;
+}
+
+.text_dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .dish_name {
@@ -182,6 +258,40 @@
   right: 20px;
 }
 
+/* dish animation */
+.dish_menu:hover .checkmark {
+  -webkit-animation: slideLeft 1s forwards;
+          animation: slideLeft 1s forwards;
+}
+
+.dish_menu:hover .dish_name {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.dish_menu:hover .price {
+  -webkit-animation: priceposition 1s forwards;
+          animation: priceposition 1s forwards;
+}
+
+.dish_menu:hover .dish_detail {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.dish_menu:hover .fa-check-circle {
+  -webkit-animation: rotateCheckmark 1s forwards;
+          animation: rotateCheckmark 1s forwards;
+}
+
 /* dessert */
 .dessert_title {
   font-family: "Roboto", sans-serif;
@@ -203,6 +313,19 @@
   padding: 12px;
   margin-bottom: 20px;
   background-color: #FFF;
+  -webkit-animation: slideUp 2s;
+          animation: slideUp 2s;
+  overflow: hidden;
+}
+
+.text_dessert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .dessert_name {
@@ -224,6 +347,40 @@
   position: absolute;
   bottom: 10px;
   right: 20px;
+}
+
+/* dessert animation */
+.dessert_menu:hover .checkmark {
+  -webkit-animation: slideLeft 1s forwards;
+          animation: slideLeft 1s forwards;
+}
+
+.dessert_menu:hover .dessert_name {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.dessert_menu:hover .price {
+  -webkit-animation: priceposition 1s forwards;
+          animation: priceposition 1s forwards;
+}
+
+.dessert_menu:hover .dessert_detail {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.dessert_menu:hover .fa-check-circle {
+  -webkit-animation: rotateCheckmark 1s forwards;
+          animation: rotateCheckmark 1s forwards;
 }
 
 /* order */
@@ -263,6 +420,7 @@
   padding-bottom: 20px;
   position: relative;
   top: 1090px;
+  width: 375px;
 }
 
 .logo_footer {
@@ -289,5 +447,101 @@
 .fa-hands-helping {
   font-size: 12px;
   padding-right: 5px;
+}
+
+@-webkit-keyframes slideUp {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  from {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes priceposition {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+}
+
+@keyframes priceposition {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+}
+
+@-webkit-keyframes rotateCheckmark {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateCheckmark {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style_menu.css.map */
