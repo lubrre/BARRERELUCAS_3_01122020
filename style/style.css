@@ -4,7 +4,7 @@
 /* font variable */
 /* color variable */
 body {
-  max-width: 375px;
+  width: 375px;
 }
 
 /* header */
@@ -314,9 +314,8 @@ body {
   right: 20px;
   color: #9356dc;
   background: -webkit-linear-gradient(195deg, #9356dc 0%, #ff79da 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 100;
+  -webkit-animation: FadeIn .5s forwards;
+          animation: FadeIn .5s forwards;
 }
 
 .icon_heart_outline {
@@ -324,7 +323,7 @@ body {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  opacity: 100;
+  opacity: 1;
   color: black;
 }
 
@@ -334,6 +333,7 @@ body {
   bottom: 20px;
   right: 20px;
   visibility: hidden;
+  opacity: 0;
 }
 
 /* footer */
@@ -367,5 +367,75 @@ body {
 .fa-hands-helping {
   font-size: 12px;
   padding-right: 5px;
+}
+
+@-webkit-keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Loading spinner */
+.spinner {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loading_spinner::before {
+  content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: 3px solid #F2F2F2;
+  border-top-color: #9356DC;
+  -webkit-animation: spinner 2s linear infinite;
+          animation: spinner 2s linear infinite;
+  max-width: 375px;
+}
+
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .body {
+    max-width: 1024px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
