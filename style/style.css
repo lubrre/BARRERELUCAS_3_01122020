@@ -3,21 +3,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* font variable */
 /* color variable */
-body {
-  width: 375px;
-}
-
 /* header */
 .logo_font {
   font-family: "Shrikhand";
   font-size: 25px;
   padding-top: 20px;
-  padding-right: 100px;
-  padding-left: 115px;
   padding-bottom: 20px;
   -webkit-box-shadow: 0px 4px 5px #d4d4d4;
           box-shadow: 0px 4px 5px #d4d4d4;
   position: relative;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .logo_font {
+    text-align: none;
+  }
 }
 
 /* localisation */
@@ -26,14 +27,16 @@ body {
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin: 0 auto;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .icon_localiser {
@@ -53,14 +56,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 35px;
   padding-bottom: 50px;
-  width: 375px;
+  width: 100%;
   height: 200px;
   background-color: #f6f6f6;
 }
@@ -71,6 +79,7 @@ body {
   width: 250px;
   font-size: 22px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .explorer_bio {
@@ -79,11 +88,15 @@ body {
   width: 270px;
   font-size: 16px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .btn_explorer {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 186px;
   border: none;
   border-radius: 40px;
   background: #9356dc;
@@ -98,7 +111,7 @@ body {
 
 /* fonctionnement */
 .fonctionnement {
-  width: 375px;
+  width: 100%;
 }
 
 .title_fonctionnement {
@@ -116,17 +129,54 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav_fonction {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav_fonction {
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav_fonction {
+    margin-left: none;
+    margin-right: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card_fonction {
+  position: relative;
 }
 
 .number {
-  position: relative;
-  top: 42px;
-  right: 150px;
+  position: absolute;
+  top: 22px;
+  left: -8px;
   border: 1px solid none;
   background-color: #9356DC;
   border-radius: 100%;
@@ -203,6 +253,45 @@ body {
   margin-bottom: 20px;
 }
 
+.restaurant_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+@media screen and (max-width: 1366px) {
+  .restaurant_card {
+    width: 70%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .restaurant_card {
+    width: 98%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .restaurant_card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .box_restaurant {
   -webkit-box-shadow: 2px 2px 2px 2px  #ebebeb80;
           box-shadow: 2px 2px 2px 2px  #ebebeb80;
@@ -215,7 +304,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 20px;
   border-radius: 20px;
   position: relative;
   margin-bottom: 30px;
@@ -314,6 +402,8 @@ body {
   right: 20px;
   color: #9356dc;
   background: -webkit-linear-gradient(195deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-animation: FadeIn .5s forwards;
           animation: FadeIn .5s forwards;
 }
@@ -327,7 +417,7 @@ body {
   color: black;
 }
 
-.icon_heart_outline:hover {
+.containerheart:hover .icon_heart_outline {
   font-size: 25px;
   position: absolute;
   bottom: 20px;
@@ -339,7 +429,27 @@ body {
 /* footer */
 .footer {
   background-color: #353535;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
 }
 
 .logo_footer {
@@ -369,6 +479,7 @@ body {
   padding-right: 5px;
 }
 
+/* animation */
 @-webkit-keyframes FadeIn {
   from {
     opacity: 0;
@@ -377,7 +488,6 @@ body {
     opacity: 1;
   }
 }
-
 @keyframes FadeIn {
   from {
     opacity: 0;
@@ -388,11 +498,12 @@ body {
 }
 
 /*Loading spinner */
-.spinner {
-  position: absolute;
-  width: 30%;
+spinner {
+  position: fixed;
+  width: 100%;
   height: 100%;
-  max-width: 375px;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,6 +513,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
+  background-color: rgba(114, 114, 114, 0.4);
+}
+
+.loading_spinner {
+  position: relative;
+  height: 60px;
+  width: 60px;
 }
 
 .loading_spinner::before {
@@ -409,14 +528,13 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
-  height: 60px;
-  width: 60px;
+  width: 100%;
+  height: 100%;
   border-radius: 50px;
   border: 3px solid #F2F2F2;
   border-top-color: #9356DC;
   -webkit-animation: spinner 2s linear infinite;
           animation: spinner 2s linear infinite;
-  max-width: 375px;
 }
 
 @-webkit-keyframes spinner {
@@ -430,12 +548,6 @@ body {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .body {
-    max-width: 1024px;
   }
 }
 /*# sourceMappingURL=style.css.map */
