@@ -18,10 +18,10 @@ $thirdcolor : #99E2D0 ;
     font-family: $font_brand;
     font-size: 25px;
     padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 115px;
     padding-bottom: 20px;
     position: relative;
+    text-align: center;
+    width: 100%;
 }
 
 .fa-arrow-left{
@@ -34,18 +34,16 @@ $thirdcolor : #99E2D0 ;
 
 /* img restaurant */
 .img_restaurant_1{
-    width: 375px;
     height: 250px;
     background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 20px;
     position: relative;
 }
 
 .img_restaurant_2{
-    width: 375px;
     height: 250px;
     background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
     background-size: cover;
@@ -56,7 +54,6 @@ $thirdcolor : #99E2D0 ;
 }
 
 .img_restaurant_3{
-    width: 375px;
     height: 250px;
     background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     background-size: cover;
@@ -67,7 +64,6 @@ $thirdcolor : #99E2D0 ;
 }
 
 .img_restaurant_4{
-    width: 375px;
     height: 250px;
     background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     background-size: cover;
@@ -79,14 +75,38 @@ $thirdcolor : #99E2D0 ;
 /* menu */
 
 .menu_card{
-    width: 375px;
+    width: 100%;
     border-radius: 50px 50px 0px 0px;
     padding-top: 40px;
+    position: relative;
+    top: -50px;
     background-color: white;
-    position: absolute;
-    top: 265px;
     background-color: #F2F2F2;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1366px){
+    .menu_card{
+        width: 1366px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .menu_card{
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .menu_card{
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .menu_card{
+        width: 375px;
+    }
 }
 
 .restaurant_name{
@@ -104,7 +124,50 @@ $thirdcolor : #99E2D0 ;
     right: 40px;
 }
 
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media screen and (max-width: 1366px){
+    .card{
+        width: 1366px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .card{
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .card{
+        width: 375px;
+    }
+}
+
 /* starter */
+
+.starter{
+    width: 400px;
+}
+
+@media screen and (max-width: 1366px){
+    .starter{
+        width: auto;
+    }
+}
+
 .starter_title{
     font-family: $mainfont;
     margin-left: 30px;
@@ -202,6 +265,17 @@ $thirdcolor : #99E2D0 ;
 }
 
 /* dish */
+
+.dish{
+    width: 400px;
+}
+
+@media screen and (max-width: 1366px){
+    .dish{
+        width: auto;
+    }
+}
+
 .dish_title{
     font-family: $mainfont;
     margin-left: 30px;
@@ -285,6 +359,17 @@ $thirdcolor : #99E2D0 ;
 }
 
 /* dessert */
+
+.dessert{
+    width: 400px;
+}
+
+@media screen and (max-width: 1366px){
+    .dessert{
+        width: auto;
+    }
+}
+
 .dessert_title{
     font-family: $mainfont;
     margin-left: 30px;
@@ -371,7 +456,6 @@ $thirdcolor : #99E2D0 ;
 
 .order{
     display: flex;
-    width: 375px;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -399,11 +483,18 @@ $thirdcolor : #99E2D0 ;
 
 .footer{
     background-color: #353535;
-    padding-bottom: 20px;
-    position: relative;
-    top: 1090px;
-    width: 375px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+}
 
+@media screen and (max-width: 375px){
+    .footer{
+        flex-direction: column;
+        align-items: left;
+    }
 }
 .logo_footer{
     font-family: $font_brand;
