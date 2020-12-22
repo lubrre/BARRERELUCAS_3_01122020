@@ -515,6 +515,8 @@ spinner {
           align-items: center;
   z-index: 2;
   background-color: rgba(114, 114, 114, 0.4);
+  -webkit-animation: rmspinner 3s forwards;
+          animation: rmspinner 3s forwards;
 }
 
 .loading_spinner {
@@ -548,6 +550,30 @@ spinner {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rmspinner {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rmspinner {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -458,6 +458,7 @@ spinner{
     align-items: center;
     z-index: 2;
     background-color:rgba($color: #727272, $alpha: 0.4);
+    animation: rmspinner 3s forwards;
 }
 .loading_spinner{
     position: relative;
@@ -479,6 +480,20 @@ spinner{
 @keyframes spinner{
     to{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rmspinner{
+    0%{
+        opacity: 1;
+    }
+
+    99%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
     }
 }
 
