@@ -28,7 +28,7 @@ $thirdcolor : #99E2D0 ;
 
 @media screen and (max-width: 375px){
     .logo_font{
-        text-align: none;
+        text-align: center;
     }
 }
 
@@ -138,14 +138,14 @@ $thirdcolor : #99E2D0 ;
 
 @media screen and (max-width: 768px){
     .nav_fonction{
-        justify-content: none;
+        justify-content: flex-start;
         flex-direction: column;
     }
 }
 @media screen and (max-width: 375px){
     .nav_fonction{
-        margin-left: none;
-        margin-right: none;
+        margin-left: auto;
+        margin-right: auto;
         flex-direction: column;
     }
 }
@@ -403,7 +403,7 @@ $thirdcolor : #99E2D0 ;
 @media screen and (max-width: 375px){
     .footer{
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start;
     }
 }
 .logo_footer{
@@ -447,7 +447,7 @@ $thirdcolor : #99E2D0 ;
 
 
 /*Loading spinner */
-spinner{
+.spinner{
     position: fixed;
     width: 100%;
     height: 100%;
@@ -485,15 +485,15 @@ spinner{
 
 @keyframes rmspinner{
     0%{
-        opacity: 1;
+        transform: scale(1);
     }
 
     99%{
-        opacity: 1;
+        transform: scale(1);
     }
 
     100%{
-        opacity: 0;
+        transform: scale(0);
     }
 }
 
